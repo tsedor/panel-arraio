@@ -1,0 +1,16 @@
+[{
+  "id": 1,
+  "name": "Tomek",
+  "date": "2020-04-26 18:14",
+  "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna libero, eleifend sagittis arcu vitae, elementum molestie sem. Suspendisse vel nisi blandit, malesuada enim ut, varius magna."
+}, {
+  "id": 2,
+  "name": "Arek",
+  "date": "2020-04-26 18:26",
+  "message": "Sed faucibus purus eget odio mattis, varius gravida magna ullamcorper. Nulla vestibulum enim non elit bibendum vulputate. Vestibulum congue convallis accumsan. Suspendisse lorem lacus, dapibus quis semper a, venenatis id velit. Fusce porta, dui a luctus hendrerit, lorem ligula dapibus neque, et pellentesque dui est quis turpis."
+}, {
+  "id": 3,
+  "name": "Mariola",
+  "date": "2020-04-26 18:33",
+  "message": "Sed id mauris eu orci sagittis volutpat. Aenean ac ex et dolor aliquam mattis vitae eget nunc. Mauris ac ultricies mauris, in tincidunt eros. Donec eu egestas elit. Vestibulum aliquam tristique lorem ultricies imperdiet. Duis eget iaculis tellus. Nulla viverra dignissim nisl, eget rutrum odio pellentesque et. Quisque varius orci id lacus mattis finibus. Integer a dapibus velit, vitae cursus est. Suspendisse et viverra nibh. Phasellus non lorem tincidunt, interdum libero elementum, vestibulum purus. In et porta augue, ac tincidunt tellus. Pellentesque leo nunc, cursus quis pulvinar ut, semper eget urna."
+}]
