@@ -28,6 +28,7 @@ const Login = () => {
   const dispatch = useDispatch();
   const loginValue = useSelector(state => state.user.loginForm.login);
   const passwordValue = useSelector(state => state.user.loginForm.password);
+  const request = useSelector(state => state.user.loginForm.request);
   const token = useSelector(state => state.user.token);
   return (
     <LoginContainer>
@@ -35,7 +36,7 @@ const Login = () => {
       <CardStyled elevation={Elevation.TWO}>
         <InputGroupStyled placeholder="Login" leftIcon="user" value={loginValue} onChange={e => dispatch(loginValueChange(e.target.value))} />
         <InputGroupStyled placeholder="Hasło" leftIcon="lock" value={passwordValue} onChange={e => dispatch(passwordValueChange(e.target.value))} />
-        <Button onClick={() => dispatch(loginRequest())}>Zaloguj</Button>
+        <Button onClick={() => dispatch(loginRequest())} loading={request}>Zaloguj</Button>
       </CardStyled>
     </LoginContainer>
   )

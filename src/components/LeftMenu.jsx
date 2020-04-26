@@ -12,13 +12,26 @@ const MenuStyled = styled(Menu)`
   max-width: 250px;
 `;
 
+const menuItems = [{
+  text: 'Dashboard',
+  icon: 'home',
+  path: '/'
+}, {
+  text: 'Wiadomości',
+  icon: 'inbox',
+  path: '/messages'
+}, {
+  text: 'Telefony',
+  icon: 'phone',
+  path: '/phones'
+}]
+
 const LeftMenu = ({ history }) => {
+  console.log(history)
   const dispatch = useDispatch();
   return (
     <MenuStyled>
-      <MenuItem text="Dashboard" icon="home" onClick={() => history.push('/')} />
-      <MenuItem text="Wiadomości" icon="inbox" onClick={() => history.push('/messages')} />
-      <MenuItem text="Telefony" icon="phone" onClick={() => history.push('/phones')} />
+      {menuItems.map(({ text, icon, path }) => <MenuItem key={text} text={text} icon={icon} onClick={() => history.push(path)} active={history.location.pathname === path} />)}
       <MenuDivider />
       <MenuItem text="Wyloguj się" icon="log-out" onClick={() => dispatch(logout())} />
     </MenuStyled>

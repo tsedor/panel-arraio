@@ -8,7 +8,7 @@ const initialState = {
     request: false,
     error: ''
   },
-  token: 'abc'
+  token: ''
 }
 
 export const userSlice = createSlice({
